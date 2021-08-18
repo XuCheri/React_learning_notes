@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-13 13:17:39
- * @LastEditTime: 2021-08-15 20:43:30
+ * @LastEditTime: 2021-08-18 14:05:02
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \React_learning_notes\README.md
@@ -143,3 +143,36 @@ React Developer Tools
 
 - 虽然JSX元素是一个对象，但是该对象中的所有属性不可更改
 - 如果确实需要更改元素的属性，需要重新创建JSX元素
+
+## 组件和组件属性
+
+组件：包含内容、样式和功能的UI单元
+
+### 创建一个组件
+
+**特别注意：组件的名称首字母必须大写**
+
+1. 函数组件
+   
+返回一个React元素
+
+2. 类组件
+
+必须继承React.Component
+
+必须提供render函数，用于渲染组件
+
+### 组件的属性
+
+1. 对于函数组件，属性会作为一个对象的属性，传递给函数的参数
+2. 对于类组件，属性会作为一个对象的属性，传递给构造函数的参数
+
+注意：组件的属性，应该使用小驼峰命名法
+
+**组件无法改变自身的属性**。
+
+之前学习的React元素，本质上，就是一个组件（内置组件）
+
+React中的哲学：数据属于谁，谁才有权力改动
+
+**React中的数据，自顶而下流动**
