@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-13 13:17:39
- * @LastEditTime: 2021-08-19 14:01:08
+ * @LastEditTime: 2021-08-22 20:15:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \React_learning_notes\README.md
@@ -198,3 +198,14 @@ React中的哲学：数据属于谁，谁才有权力改动
 
 1. props：该数据是由组件的使用者传递的数据，所有权不属于组件自身，因此组件无法改变该数组
 2. state：该数组是由组件自身创建的，所有权属于组件自身，因此组件有权改变该数据
+
+## 事件
+
+在React中，组件的事件，本质上就是一个属性
+
+按照之前React对组件的约定，由于事件本质上是一个属性，因此也需要使用小驼峰命名法
+
+**如果没有特殊处理，在事件处理函数中，this指向undefined**
+
+1. 使用bind函数，绑定this
+2. 使用箭头函数
